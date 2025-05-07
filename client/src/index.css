@@ -1,0 +1,38 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: "Futura";
+  src: url(/public/fonts/FuturaNewLight.woff) format("woff");
+  font-style: normal;
+  font-weight: 300;
+}
+
+@font-face {
+  font-family: "Futura";
+  src: url(/public/fonts/FuturaNewBook.woff) format("woff");
+  font-style: normal;
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "Futura";
+  src: url(/public/fonts/FuturaNewMedium.woff) format("woff");
+  font-style: normal;
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: "Futura";
+  src: url(/public/fonts/FuturaNewBook.woff) format("woff");
+  font-style: normal;
+  font-weight: 600;
+}
+
+@font-face {
+  font-family: "Futura";
+  src: url(/public/fonts/FuturaNewHeavy.woff) format("woff");
+  font-style: normal;
+  font-weight: 700;
+}

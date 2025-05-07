@@ -1,0 +1,579 @@
+{
+  "phoneNumbers": [
+    {
+      "id": 1,
+      "city": "Chisinau",
+      "number": "022 345 678"
+    },
+    {
+      "id": 2,
+      "city": "Balti",
+      "number": "022 345 345"
+    },
+    {
+      "id": 3,
+      "city": "Cahul",
+      "number": "022 345 345"
+    },
+    {
+      "id": 4,
+      "city": "Comrat",
+      "number": "022 345 345"
+    },
+    {
+      "id": 5,
+      "city": "Ceadar-Lunga",
+      "number": "022 345 345"
+    }
+  ],
+  "partners": [
+    {
+      "imgUrl": "https://www.andys.md/app/img/icons/logo-footer-2.svg",
+      "redirectUrl": "https://laplacinte.md/",
+      "width": "86",
+      "height": "15"
+    },
+    {
+      "imgUrl": "https://www.andys.md/app/img/icons/logo-footer-3.svg",
+      "redirectUrl": "https://ciaocacao.md/",
+      "width": "74",
+      "height": "27"
+    },
+    {
+      "imgUrl": "https://www.andys.md/app/img/icons/logo-footer-4.svg",
+      "redirectUrl": "https://gustland.md/",
+      "width": "74",
+      "height": "32"
+    }
+  ],
+  "nav": [
+    {
+      "key": "menu",
+      "href": "/catalog"
+    },
+    {
+      "href": "/restaurants",
+      "key": "restaurants"
+    },
+    {
+      "href": "/news",
+      "key": "news"
+    }
+  ],
+  "subNav": [
+    {
+      "parent": "menu",
+      "title": "Cake",
+      "href": "/catalog/cake"
+    },
+    {
+      "parent": "menu",
+      "title": "Cake(slice)",
+      "href": "/catalog/cake(slice)"
+    },
+    {
+      "parent": "menu",
+      "title": "Dessert",
+      "href": "/catalog/dessert"
+    },
+    {
+      "parent": "menu",
+      "title": "Macaron",
+      "href": "/catalog/macaron"
+    },
+    {
+      "parent": "menu",
+      "title": "Cookies",
+      "href": "/catalog/cookies"
+    },
+    {
+      "parent": "menu",
+      "title": "Placinta",
+      "href": "/catalog/placinta"
+    },
+    {
+      "parent": "menu",
+      "title": "Personalized-cake",
+      "href": "/catalog/Personalized-cake"
+    }
+  ],
+  "category": [
+    {
+      "key": "cake",
+      "title": "Cake"
+    },
+    {
+      "key": "cake(slice)",
+      "title": "Cake(Slice)"
+    },
+    {
+      "key": "dessert",
+      "title": "Dessert"
+    },
+    {
+      "key": "macaron",
+      "title": "Macaron"
+    },
+    {
+      "key": "cookies",
+      "title": "Cookies"
+    },
+    {
+      "key": "placinta",
+      "title": "Placinta"
+    }
+  ],
+  "products": [
+    {
+      "key": "1",
+      "parent": "cake",
+      "name": "Tort Dubai",
+      "price": 229,
+      "urlImg": "https://dulcinella.md/sites/default/files/styles/produs_h/public/produse/tort_dubai_1_0.png?itok=LFR4irea",
+      "description": "description1",
+      "quantity": 850,
+      "imgLarge": "https://dulcinella.md/sites/default/files/oz/torturi/basic/tort_dubai_1.png"
+    },
+    {
+      "key": "2",
+      "parent": "cake",
+      "name": "Tort LIMA",
+      "description": "description2",
+      "quantity": 650,
+      "price": 185,
+      "urlImg": "https://dulcinella.md/sites/default/files/oz/torturi/basic/img_4463_1.jpg",
+      "imgLarge": "https://dulcinella.md/sites/default/files/oz/torturi/basic/img_4463_1.jpg"
+    },
+    {
+      "key": "3",
+      "parent": "cake",
+      "name": "Drip Cake Fistic",
+      "description": "description3",
+      "quantity": 900,
+      "price": 224,
+      "urlImg": "https://dulcinella.md/sites/default/files/styles/produs_v/public/oz/torturi/basic/drip_112.png?itok=gECeUsKR",
+      "imgLarge": "https://dulcinella.md/sites/default/files/oz/torturi/basic/drip_112.png"
+    },
+    {
+      "key": "4",
+      "parent": "cake",
+      "name": "Bento cake",
+      "description": "description4",
+      "quantity": 300,
+      "price": 201,
+      "urlImg": "https://dulcinella.md/sites/default/files/oz/torturi/basic/img_4565_1.jpg",
+      "imgLarge": "https://dulcinella.md/sites/default/files/oz/torturi/basic/img_4565_1.jpg"
+    },
+    {
+      "key": "5",
+      "parent": "cake",
+      "name": "Tort VALENTINA",
+      "description": "description5",
+      "quantity": 850,
+      "price": 243,
+      "urlImg": "https://dulcinella.md/sites/default/files/oz/torturi/basic/img_1810_11.jpg",
+      "imgLarge": "https://dulcinella.md/sites/default/files/oz/torturi/basic/img_1810_11.jpg"
+    },
+    {
+      "key": "6",
+      "parent": "cake(slice)",
+      "name": "Prăjitură INIMIOARĂ",
+      "description": "description6",
+      "quantity": 140,
+      "price": 38,
+      "urlImg": "https://dulcinella.md/sites/default/files/oz/prajituri/basic/img_1327_1.jpg",
+      "imgLarge": "https://dulcinella.md/sites/default/files/oz/prajituri/basic/img_1327_1.jpg"
+    },
+    {
+      "key": "7",
+      "parent": "cake(slice)",
+      "name": "Set de prăjituri",
+      "description": "description7",
+      "quantity": 860,
+      "price": 245,
+      "urlImg": "https://dulcinella.md/sites/default/files/styles/produs_v/public/oz/prajituri/basic/img_6888_1.jpg?itok=q17JBPAy",
+      "imgLarge": "https://dulcinella.md/sites/default/files/oz/prajituri/basic/img_6888_1.jpg"
+    },
+    {
+      "key": "8",
+      "parent": "cake(slice)",
+      "name": "Ecler CLASIC",
+      "description": "description8",
+      "quantity": 70,
+      "price": 22,
+      "urlImg": "https://dulcinella.md/sites/default/files/styles/produs_v/public/oz/prajituri/basic/ecler_clasic_0.jpg?itok=gSCHGKZQ",
+      "imgLarge": "https://dulcinella.md/sites/default/files/oz/prajituri/basic/ecler_clasic_0.jpg"
+    },
+    {
+      "key": "9",
+      "parent": "cake(slice)",
+      "name": "Prăjitură LOVE",
+      "description": "description9",
+      "quantity": 50,
+      "price": 25,
+      "urlImg": "https://dulcinella.md/sites/default/files/oz/prajituri/basic/img_1315_1.jpg",
+      "imgLarge": "https://dulcinella.md/sites/default/files/oz/prajituri/basic/img_1315_1.jpg"
+    },
+    {
+      "key": "10",
+      "parent": "cake(slice)",
+      "name": "Set Exclusiv",
+      "description": "description10",
+      "quantity": 1500,
+      "price": 688,
+      "urlImg": "https://dulcinella.md/sites/default/files/styles/produs_v/public/oz/prajituri/basic/img_2540_11_0.jpg?itok=O2DYPEA8",
+      "imgLarge": "https://dulcinella.md/sites/default/files/oz/prajituri/basic/img_2540_11_0.jpg"
+    },
+    {
+      "key": "11",
+      "parent": "dessert",
+      "name": "Set de Madeleines",
+      "price": 77,
+      "urlImg": "https://dulcinella.md/sites/default/files/styles/large/public/oz/desert/basic/madeleines_site.jpg?itok=WsxN6ghM",
+      "description": "description11",
+      "quantity": 100,
+      "imgLarge": "https://dulcinella.md/sites/default/files/oz/desert/basic/madeleines_site.jpg"
+    },
+    {
+      "key": "12",
+      "parent": "dessert",
+      "name": "Meringue rotund",
+      "description": "description12",
+      "quantity": 20,
+      "price": 18,
+      "urlImg": "https://dulcinella.md/sites/default/files/oz/desert/basic/img_4367_1.jpg",
+      "imgLarge": "https://dulcinella.md/sites/default/files/oz/desert/basic/img_4367_1.jpg"
+    },
+    {
+      "key": "13",
+      "parent": "dessert",
+      "name": "Meringue “Nouraș”",
+      "description": "description13",
+      "quantity": 100,
+      "price": 20,
+      "urlImg": "https://dulcinella.md/sites/default/files/oz/desert/basic/img_4407_1.jpg",
+      "imgLarge": "https://dulcinella.md/sites/default/files/oz/desert/basic/img_4407_1.jpg"
+    },
+    {
+      "key": "14",
+      "parent": "dessert",
+      "name": "Jeleu Chia CU ANANAS",
+      "description": "description14",
+      "quantity": 50,
+      "price": 33,
+      "urlImg": "https://dulcinella.md/sites/default/files/oz/desert/basic/img_5863_web.jpg",
+      "imgLarge": "https://dulcinella.md/sites/default/files/oz/desert/basic/img_5863_web.jpg"
+    },
+    {
+      "key": "15",
+      "parent": "dessert",
+      "name": "Desert cu coacăză",
+      "description": "description15",
+      "quantity": 50,
+      "price": 45,
+      "urlImg": "https://dulcinella.md/sites/default/files/oz/desert/basic/img_4526_web.jpg",
+      "imgLarge": "https://dulcinella.md/sites/default/files/oz/desert/basic/img_4526_web.jpg"
+    },
+    {
+      "key": "16",
+      "parent": "Macaron BANANĂ",
+      "name": "Macaron CIOCOLATĂ",
+      "description": "description16",
+      "quantity": 7,
+      "price": 18,
+      "urlImg": "https://dulcinella.md/sites/default/files/styles/large/public/oz/macarons/basic/macarons_cu_banana.jpg?itok=fAmG8y5w",
+      "imgLarge": "https://dulcinella.md/sites/default/files/oz/macarons/basic/macarons_cu_banana.jpg"
+    },
+    {
+      "key": "17",
+      "parent": "macaron",
+      "name": "Macaron BONBON",
+      "description": "description17",
+      "quantity": 7,
+      "price": 18,
+      "urlImg": "https://dulcinella.md/sites/default/files/styles/large/public/oz/macarons/basic/macarons_bonbon.jpg?itok=icPFLToi",
+      "imgLarge": "https://dulcinella.md/sites/default/files/oz/macarons/basic/macarons_bonbon.jpg"
+    },
+    {
+      "key": "18",
+      "parent": "macaron",
+      "name": "Macaron MARACUJA",
+      "description": "description18",
+      "quantity": 7,
+      "price": 18,
+      "urlImg": "https://dulcinella.md/sites/default/files/styles/large/public/oz/macarons/basic/macarons_cu_maracuia.jpg?itok=TxEiyZOV",
+      "imgLarge": "https://dulcinella.md/sites/default/files/oz/macarons/basic/macarons_cu_maracuia.jpg"
+    },
+    {
+      "key": "19",
+      "parent": "macaron",
+      "name": "Macaron FISTIC",
+      "description": "description19",
+      "quantity": 7,
+      "price": 18,
+      "urlImg": "https://dulcinella.md/sites/default/files/styles/large/public/oz/macarons/basic/macarons_cu_fistic.jpg?itok=FiSWv5a1",
+      "imgLarge": "https://dulcinella.md/sites/default/files/oz/macarons/basic/macarons_cu_fistic.jpg"
+    },
+    {
+      "key": "20",
+      "parent": "macaron",
+      "name": "Macaron CARAMEL",
+      "description": "description20",
+      "quantity": 7,
+      "price": 10,
+      "urlImg": "https://dulcinella.md/sites/default/files/styles/large/public/oz/macarons/basic/macarons_cu_caramel.jpg?itok=_oo115gI",
+      "imgLarge": "https://dulcinella.md/sites/default/files/oz/macarons/basic/macarons_cu_caramel.jpg"
+    },
+    {
+      "key": "25",
+      "parent": "macaron",
+      "name": "Biscuiți TALISMAN",
+      "description": "description25",
+      "quantity": 100,
+      "price": 25,
+      "urlImg": "https://dulcinella.md/sites/default/files/oz/biscuiti/basic/img_7872.jpg",
+      "imgLarge": "https://dulcinella.md/sites/default/files/oz/biscuiti/basic/img_7872.jpg"
+    },
+    {
+      "key": "26",
+      "parent": "cookies",
+      "name": "Urechiușe mici",
+      "price": 12,
+      "urlImg": "https://dulcinella.md/sites/default/files/oz/biscuiti/basic/img_1648_1.jpg",
+      "description": "description26",
+      "quantity": 100,
+      "imgLarge": "https://dulcinella.md/sites/default/files/oz/biscuiti/basic/img_1648_1.jpg"
+    },
+    {
+      "key": "27",
+      "parent": "cookies",
+      "name": "Biscuiți cu nucă și bezea",
+      "description": "description27",
+      "quantity": 100,
+      "price": 16,
+      "urlImg": "https://dulcinella.md/sites/default/files/oz/biscuiti/basic/img_1677_1.jpg",
+      "imgLarge": "https://dulcinella.md/sites/default/files/oz/biscuiti/basic/img_1677_1.jpg"
+    },
+    {
+      "key": "28",
+      "parent": "cookies",
+      "name": "Biscuiți MOLDOVA”",
+      "description": "description28",
+      "quantity": 100,
+      "price": 15,
+      "urlImg": "https://dulcinella.md/sites/default/files/oz/biscuiti/basic/moldova.jpg",
+      "imgLarge": "https://dulcinella.md/sites/default/files/oz/biscuiti/basic/moldova.jpg"
+    },
+    {
+      "key": "29",
+      "parent": "cookies",
+      "name": "Biscuiți NUCUȘOARE",
+      "description": "description29",
+      "quantity": 100,
+      "price": 11,
+      "urlImg": "https://dulcinella.md/sites/default/files/oz/biscuiti/basic/nucusoare.jpg",
+      "imgLarge": "https://dulcinella.md/sites/default/files/oz/biscuiti/basic/nucusoare.jpg"
+    },
+    {
+      "key": "30",
+      "parent": "cookies",
+      "name": "Biscuiți FLUIERAȘ",
+      "description": "description30",
+      "quantity": 100,
+      "price": 18,
+      "urlImg": "https://dulcinella.md/sites/default/files/styles/large/public/oz/biscuiti/basic/img_0304_1.jpg?itok=wQ5NFfnE",
+      "imgLarge": "https://dulcinella.md/sites/default/files/oz/biscuiti/basic/img_0304_1.jpg"
+    },
+    {
+      "key": "31",
+      "parent": "placinta",
+      "name": "Rollini CU BRÂNZĂ",
+      "price": 27,
+      "urlImg": "https://dulcinella.md/sites/default/files/oz/placinte/basic/placinta_brinza_1.jpg",
+      "description": "description31",
+      "quantity": 150,
+      "imgLarge": "https://dulcinella.md/sites/default/files/oz/placinte/basic/placinta_brinza_1.jpg"
+    },
+    {
+      "key": "32",
+      "parent": "placinta",
+      "name": "Socinic",
+      "description": "description32",
+      "quantity": 150,
+      "price": 16,
+      "urlImg": "https://dulcinella.md/sites/default/files/oz/placinte/basic/img_0800_1.jpg",
+      "imgLarge": "https://dulcinella.md/sites/default/files/oz/placinte/basic/img_0800_1.jpg"
+    },
+    {
+      "key": "33",
+      "parent": "placinta",
+      "name": "Vatrușca",
+      "description": "description33",
+      "quantity": 125,
+      "price": 15,
+      "urlImg": "https://dulcinella.md/sites/default/files/oz/placinte/basic/img_0826_1.jpg",
+      "imgLarge": "https://dulcinella.md/sites/default/files/oz/placinte/basic/img_0826_1.jpg"
+    },
+    {
+      "key": "34",
+      "parent": "placinta",
+      "name": "Plăcintă CU CAȘCAVAL",
+      "description": "description34",
+      "quantity": 150,
+      "price": 22,
+      "urlImg": "https://dulcinella.md/sites/default/files/oz/placinte/basic/img_9070_1.jpg",
+      "imgLarge": "https://dulcinella.md/sites/default/files/oz/placinte/basic/img_9070_1.jpg"
+    },
+    {
+      "key": "35",
+      "parent": "placinta",
+      "name": "Plăcintă CU CAȘCAVAL",
+      "description": "description35",
+      "quantity": 150,
+      "price": 22,
+      "urlImg": "https://dulcinella.md/sites/default/files/oz/placinte/basic/img_9066_1.jpg",
+      "imgLarge": "https://dulcinella.md/sites/default/files/oz/placinte/basic/img_9066_1.jpg"
+    }
+  ],
+  "footer": [
+    {
+      "key": "company",
+      "href": "#"
+    },
+    {
+      "key": "services",
+      "href": "#"
+    },
+    {
+      "key": "delivery",
+      "href": "#"
+    }
+  ],
+  "subFooter": [
+    {
+      "parent": "company",
+      "title": "Career"
+    },
+    {
+      "parent": "company",
+      "title": "Feedback"
+    },
+    {
+      "parent": "company",
+      "title": "Contacts"
+    },
+    {
+      "parent": "services",
+      "title": "Client card"
+    },
+    {
+      "parent": "services",
+      "title": "Corporate clients"
+    },
+    {
+      "parent": "services",
+      "title": "Kids parties"
+    },
+    {
+      "parent": "services",
+      "title": "Banquets"
+    },
+    {
+      "parent": "delivery",
+      "title": "Chișinău"
+    },
+    {
+      "parent": "delivery",
+      "title": "Bălți"
+    },
+    {
+      "parent": "delivery",
+      "title": "Cahul"
+    },
+    {
+      "parent": "delivery",
+      "title": "Comrat"
+    },
+    {
+      "parent": "delivery",
+      "title": "Ceadâr Lunga"
+    }
+  ],
+  "sliderTop": [
+    {
+      "imgUrl": "https://www.andys.md/public/slider/bc4de470c2bacce2e6e9799830371e7f.jpg"
+    },
+    {
+      "imgUrl": "https://www.andys.md/public/slider/6b80e6c7126d5b01e9609fc7847fe7f5.jpg"
+    },
+    {
+      "imgUrl": "https://dulcinella.md/sites/default/files/oferte/slide/web_banner_candy_bar.jpg"
+    },
+    {
+      "imgUrl": "https://www.andys.md/public/slider/442ec2eac00f8b3e8d7a9b67b458d5e7.jpg"
+    }
+  ],
+  "sliderBottom": [
+    {
+      "imgUrl": "https://www.andys.md/public/slider/bc4de470c2bacce2e6e9799830371e7f.jpg"
+    },
+    {
+      "imgUrl": "https://www.andys.md/public/slider/6b80e6c7126d5b01e9609fc7847fe7f5.jpg"
+    },
+    {
+      "imgUrl": "https://www.andys.md/public/slider/442ec2eac00f8b3e8d7a9b67b458d5e7.jpg"
+    },
+    {
+      "imgUrl": "https://www.andys.md/public/slider/8082f44d4ba0d64f31164146e95c81c9.jpg"
+    }
+  ],
+  "news": [
+    {
+      "key": "1",
+      "data": "03.05.2022",
+      "title": "Incredibly tasty and colorful - new summer menu",
+      "previewDetail": "Update menu starting May 5th",
+      "imgUrl": "https://dulcinella.md/sites/default/files/oferte/slide/dulce_oferta_tort_smantanel_februarie_2025.png",
+      "detail": "news1"
+    },
+
+    {
+      "key": "2",
+      "data": "20.04.2022",
+      "title": "We are with you on EASTER HOLIDAYS",
+      "previewDetail": "Schedule",
+      "imgUrl": "https://dulcinella.md/sites/default/files/styles/produs_h/public/produse/img_4367_1.jpg?itok=4ujxtcq3",
+      "detail": "news2"
+    },
+
+    {
+      "key": "3",
+      "data": "21.07.2021",
+      "title": "Summer taste",
+      "previewDetail": "From July 9, Andy’s restaurant chain launches the brightest promotion of this summer",
+      "imgUrl": "https://dulcinella.md/sites/default/files/oferte/slide/web_banner_uds_1.jpg",
+      "detail": "news3"
+    },
+
+    {
+      "key": "4",
+      "data": "20.04.2022",
+      "title": "May 7 A new summer, fresh and vibrant menu starts.",
+      "previewDetail": "New menu from 7 May",
+      "imgUrl": "https://dulcinella.md/sites/default/files/oferte/slide/dulce_oferta_combo_februarie_2025.png",
+      "detail": "news4"
+    }
+  ],
+
+  "role": [
+    {
+      "name": "user"
+    },
+    {
+      "name": "moderator"
+    },
+    {
+      "name": "admin"
+    }
+  ]
+}
