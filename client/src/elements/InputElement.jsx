@@ -4,7 +4,6 @@ function InputElement(props) {
   const { text, type, name, value, onChange } = props;
   return (
     <div>
-      {" "}
       <div className="border mt-5 border-gray-300 rounded-lg px-3 py-2 shadow-sm  bg-white">
         <label
           htmlFor="name"

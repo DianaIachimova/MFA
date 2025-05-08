@@ -5,6 +5,8 @@ const schema = new mongoose.Schema({
   username: { type: String, required: true, unique: true },
   email: { type: String, required: true, unique: true },
   password: String,
+  otp: Number,
+  otp_verified: Boolean,
   roles: [
     {
       type: mongoose.Schema.Types.ObjectId,
