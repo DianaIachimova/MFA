@@ -16,6 +16,31 @@ export const userLogin = (username, password) => async (dispatch) => {
   }
 };
 
+export const codeVerify = (code) => async (dispatch) => {
+  try {
+    const token = localStorage.getItem("accessToken");
+
+    if (!token) {
+      alert("No access token found!");
+      return dispatch({ type: USER_LOGOUT });
+    }
+
+    const user = await api.post(
+      "/auth/codeverify",
+      { otp: code },
+      { "x-access-token": token }
+    );
+
+    localStorage.setItem("accessToken", user.accessToken);
+    dispatch({ type: USER_LOGIN, payload: { ...user } });
+  } catch (error) {
+    console.log(error);
+    alert("No user found!");
+    dispatch({ type: USER_LOGOUT });
+    return;
+  }
+};
+
 export const userAuth = async (dispatch) => {
   const token = localStorage.getItem("accessToken");
 
