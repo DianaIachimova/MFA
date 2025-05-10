@@ -13,7 +13,7 @@ const Register = lazy(() => import("../pages/Register"));
 const News = lazy(() => import("../pages/News"));
 const DetailsNews = lazy(() => import("../pages/DetailsNews"));
 const Cart = lazy(() => import("../pages/Cart"));
-const VerificationCodePage = lazy(() => import("../pages/VerificationCodePage"));
+const UserPage = lazy(() => import("../pages/UserPage"));
 
 const RedirectToHomepage = () => {
   const navigate = useNavigate();
@@ -61,10 +61,11 @@ const routes = [
     component: Register,
     exact: true,
   },
+
   {
-    path: "/:locale/verify",
-    component: VerificationCodePage,
-    exact: true,
+    path: "/:locale/profile",
+    component: UserPage,
+    exact: true
   },
   
   {

@@ -1,56 +1,67 @@
-const defaultHeaders = {
-  "Content-Type": "application/json",
-};
-const defaultBaseUrl = "http://localhost:3333";
+const BASE_URL = 'http://localhost:3333';
 
-export class ApiService {
-  constructor(baseUrl = defaultBaseUrl, headers = defaultHeaders) {
-    this.baseUrl = baseUrl;
-    this.headers = headers;
+async function handleResponse(response) {
+  if (!response.ok) {
+    const error = await response.json();
+    throw new Error(error.message || 'API request failed');
   }
-
-  get(url, params = {}, headers = {}) {
-    const searchParams = new URLSearchParams(params);
-
-    return fetch(`${this.baseUrl}${url}${params ? `?${searchParams}` : ''}`, {
-      method: "GET",
-      headers: { ...this.headers, ...headers },
-    }).then((response) => response.json());
-  }
-
-  put(url, body, headers = {}) {
-    return fetch(`${this.baseUrl}${url}`, {
-      method: "PUT",
-      headers: { ...this.headers, ...headers },
-      body: JSON.stringify(body),
-    }).then((response) => response.json());
-  }
-
-  post(url, body, headers = {}) {
-    return fetch(`${this.baseUrl}${url}`, {
-      method: "POST",
-      headers: { ...this.headers, ...headers },
-      body: JSON.stringify(body),
-    }).then((response) => response.json());
-  }
-
-  patch(url, body, headers = {}) {
-    return fetch(`${this.baseUrl}${url}`, {
-      method: "PATCH",
-      headers: { ...this.headers, ...headers },
-      body: JSON.stringify(body),
-    }).then((response) => response.json());
-  }
-
-  delete(url, body = {}, headers = {}) {
-    return fetch(`${this.baseUrl}${url}`, {
-      method: "DELETE",
-      headers: { ...this.headers, ...headers },
-      body: JSON.stringify(body),
-    }).then((response) => response.json());
-  }
+  return response.json();
 }
 
-const api = new ApiService();
+const api = {
+  async get(url, params = {}, headers = {}) {
+    const token = localStorage.getItem('accessToken');
+    const response = await fetch(`${BASE_URL}${url}`, {
+      method: 'GET',
+      headers: {
+        'Content-Type': 'application/json',
+        ...(token && { 'x-access-token': token }),
+        ...headers
+      }
+    });
+    return handleResponse(response);
+  },
+
+  async post(url, data = {}, headers = {}) {
+    const token = localStorage.getItem('accessToken');
+    const response = await fetch(`${BASE_URL}${url}`, {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+        ...(token && { 'x-access-token': token }),
+        ...headers
+      },
+      body: JSON.stringify(data)
+    });
+    return handleResponse(response);
+  },
+
+  async put(url, data = {}, headers = {}) {
+    const token = localStorage.getItem('accessToken');
+    const response = await fetch(`${BASE_URL}${url}`, {
+      method: 'PUT',
+      headers: {
+        'Content-Type': 'application/json',
+        ...(token && { 'x-access-token': token }),
+        ...headers
+      },
+      body: JSON.stringify(data)
+    });
+    return handleResponse(response);
+  },
+
+  async delete(url, headers = {}) {
+    const token = localStorage.getItem('accessToken');
+    const response = await fetch(`${BASE_URL}${url}`, {
+      method: 'DELETE',
+      headers: {
+        'Content-Type': 'application/json',
+        ...(token && { 'x-access-token': token }),
+        ...headers
+      }
+    });
+    return handleResponse(response);
+  }
+};
 
 export default api;

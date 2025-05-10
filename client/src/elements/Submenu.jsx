@@ -8,6 +8,7 @@ function Submenu({ items = [] }) {
     <div className="flex flex-col justify-start ml-4 mt-2 mb-2">
       {items.map((item) => (
         <Link
+          key={item.title}
           to={`/${i18n.language}${item.href}`}
           className={cn(
             "border-neutral-500 text-white py-0.5 hover:text-yellow-400 hover:font-medium"

@@ -4,7 +4,7 @@ import { useDispatch } from "react-redux";
 import { useLocation } from "react-router-dom";
 import Footer from "../components/Footer/Footer";
 import Menu from "../components/Menu/Menu";
-import { userAuth } from "../store/actions/login.action";
+import { autoLogin } from "../store/actions/login.action";
 import {
   getContactsData,
   getMenuData,
@@ -20,7 +20,7 @@ function Layout(props) {
   );
 
   useEffect(() => {
-    dispatch(userAuth);
+    dispatch(autoLogin());
     dispatch(getMenuData);
     dispatch(getContactsData);
     dispatch(getPartnersData);

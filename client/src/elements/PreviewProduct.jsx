@@ -9,7 +9,7 @@ import { useNavigate } from "react-router-dom";
 
 function PreviewProduct(props) {
   const cart = useSelector((state) => state.cart);
-  const user = useSelector((state) => state.user);
+  const user = useSelector((state) => state.user.user);
   const { t, i18n } = useTranslation();
   const {_id, name, description, quantity, imgLarge, price, onClose } = props;
   const currentEl = cart.find(el => el.product._id === _id)
