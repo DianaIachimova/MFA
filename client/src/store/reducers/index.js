@@ -11,6 +11,8 @@ import getNewsData from "./newsData.reducer";
 import getOpenNewsData from "./openNewsData.reducer";
 import getUserData from "./userData.reducer";
 import getCartData from "./cartData.reducer";
+import authReducer from "./auth.reducer";
+import registerReducer from "./register.reducer";
 
 const rootReducer = combineReducers({
   menu: getMenuData,
@@ -24,6 +26,8 @@ const rootReducer = combineReducers({
   openNews: getOpenNewsData,
   user: getUserData,
   cart: getCartData,
+  auth: authReducer,
+  register: registerReducer
 });
 
 export default rootReducer;
