@@ -15,28 +15,24 @@ const Contact = require("../models/contact.schema");
 
 const populateDatabse = async () => {
   await Partner.remove();
-  // Populate Partners collection
   if ((await Partner.estimatedDocumentCount()) === 0) {
     await Partner.create(defaultData.partners);
     console.log(`Partners: +${defaultData.partners.length} documents`);
   }
 
   await Contact.remove();
-  // Populate Contact collection
   if ((await Contact.estimatedDocumentCount()) === 0) {
     await Contact.create(defaultData.phoneNumbers);
     console.log(`Contact: +${defaultData.phoneNumbers.length} documents`);
   }
 
   await SubNavData.remove();
-  // Populate SubNav collection
   if ((await SubNavData.estimatedDocumentCount()) === 0) {
     await SubNavData.create(defaultData.subNav);
     console.log(`SubNav: +${defaultData.subNav.length} documents`);
   }
 
   await NavData.remove();
-  // Populate Nav collection
   if ((await NavData.estimatedDocumentCount()) === 0) {
     for (const item of defaultData.nav) {
       await NavData.create(item);
@@ -58,14 +54,12 @@ const populateDatabse = async () => {
   }
 
   await Product.remove();
-  // Populate Products collection
   if ((await Product.estimatedDocumentCount()) === 0) {
     await Product.create(defaultData.products);
     console.log(`Products: +${defaultData.products.length} documents`);
   }
 
   await CategoryData.remove();
-  // Populate Categories collection
   if ((await CategoryData.estimatedDocumentCount()) === 0) {
     await CategoryData.create(defaultData.category);
 
@@ -83,14 +77,12 @@ const populateDatabse = async () => {
   }
 
   await sliderTopData.remove();
-  // Populate SliderTop collection
   if ((await sliderTopData.estimatedDocumentCount()) === 0) {
     await sliderTopData.create(defaultData.sliderTop);
     console.log(`SliderTop: +${defaultData.sliderTop.length} documents`);
   }
 
   await sliderBottomData.remove();
-  // Populate SliderBottom collection
   if ((await sliderBottomData.estimatedDocumentCount()) === 0) {
     await sliderBottomData.create(defaultData.sliderBottom);
     console.log(`SliderBottom: +${defaultData.sliderBottom.length} documents`);
@@ -137,7 +129,6 @@ const populateDatabse = async () => {
     console.log(`Role: +${defaultData.role.length} documents`);
   }
 
-  // Clear Cart data
   await Cart.remove();
 };
 

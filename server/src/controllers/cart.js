@@ -49,31 +49,36 @@ exports.getProducts = async (req, res) => {
 };
 
 exports.deleteProduct = async (req, res) => {
-  const { productId } = req.body;
+  const productId = req.params.productId;
 
-  const cart = await Cart.findOne({ user: req.userId });
+  try {
+    const cart = await Cart.findOne({ user: req.userId });
 
-  if (!cart) {
-    return res.status(404).send("Cart not found");
+    if (!cart) {
+      return res.status(404).send({ message: "Cart not found" });
+    }
+
+    const item = cart.items.find(
+      (item) => item.product?.toString() === productId
+    );
+
+    if (!item) {
+      return res.status(404).send({ message: "Item not found" });
+    }
+
+    cart.items = cart.items.filter(
+      (item) => item.product?.toString() !== productId
+    );
+
+    await cart.save();
+
+    const updatedCart = await Cart.findOne({ user: req.userId }).populate(
+      "items.product"
+    );
+
+    res.send(updatedCart.items);
+  } catch (error) {
+    console.error("Delete product error:", error);
+    res.status(500).send({ message: "Error deleting product from cart" });
   }
-
-  const item = cart.items.find(
-    (item) => item.product?.toString() === productId
-  );
-
-  if (!item) {
-    return res.status(404).send("Item not found");
-  }
-
-  cart.items = cart.items.filter(
-    (item) => item.product?.toString() !== productId
-  );
-
-  await cart.save();
-
-  const { items } = await Cart.findOne({ user: req.userId }).populate(
-    "items.product"
-  );
-
-  res.send(items);
 };

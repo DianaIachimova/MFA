@@ -1,20 +1,25 @@
 import React from "react";
-import { useSelector } from "react-redux";
+import { useTranslation } from 'react-i18next';
+import CartItem from "./CartItem";
 
-const CartContent = () => {
-  const cart = useSelector((state) => state.cart);
+const CartContent = ({ cartItems }) => {
+  const { t } = useTranslation();
+
   return (
-    <div className="border border-white w-full">
-      <div className="text-4xl text-black font-bold ml-5 mb-14 mt-7">
-        {cart.length} Items in your cart
-      </div>
-      <div className="flex justify-between border-b border-neutral-400 mb-10 pb-3 ml-4 mr-4">
-        <div className="text-2xl pl-5">Product(s)</div>
-        <div className="w-5/12 flex justify-between pr-10">
-          <div className="text-2xl">Price</div>
-          <div className="text-2xl">Qty</div>
-          <div className="text-2xl">Total:</div>
+    <div className="w-full">
+      <div className="flex justify-between items-center p-6 border-b border-gray-200 bg-gray-50">
+        <div className="text-lg font-medium text-gray-600">{t('products')}</div>
+        <div className="flex items-center gap-16">
+          <div className="text-lg font-medium text-gray-600">{t('price')}</div>
+          <div className="text-lg font-medium text-gray-600">{t('quantity')}</div>
+          <div className="text-lg font-medium text-gray-600 w-24 text-right">{t('total_with_colon')}</div>
+          <div className="w-6"></div>
         </div>
+      </div>
+      <div className="divide-y divide-gray-200">
+        {cartItems.map(({ product, quantity }) => (
+          <CartItem key={product._id} product={product} quantity={quantity} />
+        ))}
       </div>
     </div>
   );

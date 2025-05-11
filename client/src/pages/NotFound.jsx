@@ -1,11 +1,9 @@
-import React from "react";
+import React from 'react';
+import { useTranslation } from 'react-i18next';
 
-function NotFound() {
-  return (
-    <div>
-      <div className="py-60 text-center text-5xl text-white">NOT FOUND</div>
-    </div>
-  );
-}
+const NotFound = () => {
+  const { t } = useTranslation();
+  return <div className="py-60 text-center text-5xl text-white">{t('not_found')}</div>;
+};
 
 export default NotFound;

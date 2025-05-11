@@ -8,7 +8,7 @@ import { useTranslation } from "react-i18next";
 const ModalCart = () => {
   const cart = useSelector((state) => state.cart);
   const dispatch = useDispatch();
- const { i18n } = useTranslation();
+  const { t, i18n} = useTranslation();
 
   const subtotal = cart.reduce((acc, { quantity, product }) => {
     return acc + quantity * product?.price;
@@ -34,14 +34,14 @@ const ModalCart = () => {
   return (
     <div className="border-transparent">
       <div className="mt-3 mb-3 text-xl ml-10 font-medium text-yellow-400">
-        Your order
+        {t('yourOrder')}
       </div>
       <div className="bg-white pb-8 text-black">
         <div className="max-h-96 overflow-y-auto">
         {cart.map(({ product, quantity }) => (
           <div  key={product._id} className="border-b border-neutral-300">
             <div className="text-base font-medium ml-5  pt-2 pb-2">
-              {product.name}
+              {t(product.name)}
             </div>
             <div className=" flex justify-between ml-6 mb-3">
               <button
@@ -61,22 +61,22 @@ const ModalCart = () => {
                   <path stroke-linecap="round" stroke-linejoin="round" d="M12 4.5v15m7.5-7.5h-15" />
                 </svg>
               </button>
-              <div className="text-xl font-bold mr-4">{product?.price} mdl</div>
+              <div className="text-xl font-bold mr-4">{product?.price} {t('mdl')}</div>
             </div>
           </div>
         ))}
         </div>
        
         <div className="flex justify-between border-b border-t border-neutral-300 ml-5 mr-5 pt-5 pb-4">
-          <div className="text-base">Delivery</div>
-          <div className="text-xl">40 mdl</div>
+          <div className="text-base">{t('delivery')}</div>
+          <div className="text-xl">40 {t('mdl')}</div>
         </div>
         <div className="flex justify-between pt-5 pl-5 pr-5">
-          <div className="text-2xl font-medium">Total</div>
-          <div className="text-2xl font-bold">{total}mdl</div>
+          <div className="text-2xl font-medium">{t('total')}</div>
+          <div className="text-2xl font-bold">{total} {t('mdl')}</div>
         </div>
         <Link to={`/${i18n.language}/cart`} className="bg-[#ff0000] w-11/12 h-[48px] m-auto rounded-md flex justify-between content-center mt-5">
-          <div className="text-white font-bold text-xl m-auto">ORDER</div>
+          <div className="text-white font-bold text-xl m-auto">{t('order')}</div>
         </Link>
       </div>
     </div>
